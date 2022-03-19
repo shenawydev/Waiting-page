@@ -1,0 +1,9 @@
+const qarray = [ "الفشل خيار، إذا لم تجرب وتفشل، فأنت لا تبتكر بشكل كافي","أحيانا ستقذفك الحياة بصخرة على رأسك لكن عليك الا تفقد ايمانك", "ما من سوء أكبر من الذنب إلا تبلد الإحساس بعد الذنب", "حتى اخر قطرة من الحياة سأظل أحاول", "تبدأ الكارثة في الأساس بقيام المرء من سريره", "لا تعر السعادة اهتماما كبيرا , فقط قم بواجباتك وستأتي السعادة من تلقاء نفسها", "إن الوجوه تتغيّر، فكيف لنا الإيمان بالكلمات التي نتبادلها", "أحب الرحيل إلى أي ريحٍ ولكنني لا أُحب الوصول"]
+const barray = [ "url(https://images.unsplash.com/photo-1610123598195-eea6b6be4c48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80)","url(https://images.unsplash.com/photo-1647119126202-d13a4263d40c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)", "url(https://images.unsplash.com/photo-1643574914412-409598704135?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)", "url(https://images.unsplash.com/photo-1645037077639-7e3d8e72f88d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)", "url(https://images.unsplash.com/photo-1645653025752-d6604441e9de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1265&q=80)", "url(https://images.unsplash.com/photo-1644467703333-a382f7bbc4b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80)"]
+
+let q = document.querySelector("p.quote") , au = document.querySelector("p.author") , b = document.querySelector("body")
+
+setInterval(function() {
+q.innerHTML = qarray[Math.floor(Math.random()*qarray.length)]
+b.style.backgroundImage = barray[Math.floor(Math.random()*barray.length)]
+}, 5000);
